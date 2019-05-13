@@ -1,5 +1,3 @@
-require('raf/polyfill');
-
 // Express
 import express from 'express';
 
