@@ -2,7 +2,10 @@ const { resolve } = require('path');
 
 module.exports = {
 	context : resolve(__dirname, 'client'),
-	entry : ['./index.js'],
+	entry : [
+		'@babel/polyfill',
+		'./index.js'
+	],
 	output : {
 		filename : 'client.bundle.js', // output filename
 		path : resolve(__dirname, 'build'), // output path
