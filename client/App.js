@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'raf/polyfill';
 
 class App extends Component {
 
