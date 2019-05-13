@@ -1,3 +1,5 @@
+require('raf');
+
 // Express
 import express from 'express';
 
