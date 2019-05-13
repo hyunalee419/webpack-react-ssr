@@ -4,6 +4,7 @@ module.exports = {
 	context : resolve(__dirname, 'client'),
 	entry : [
 		'@babel/polyfill',
+		'raf/polyfill',
 		'./index.js'
 	],
 	output : {
