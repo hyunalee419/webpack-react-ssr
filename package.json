@@ -16,6 +16,7 @@
     "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
     "babel-loader": "8.0.6",
+    "core-js": "3.0.1",
     "express": "4.16.4",
     "nodemon": "1.19.0",
     "raf": "3.4.1",
