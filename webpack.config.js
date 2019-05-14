@@ -1,14 +1,14 @@
-const { resolve } = require('path');
+const path = require('path');
+require('webpack');
 
 module.exports = {
-	context : resolve(__dirname, 'client'),
 	entry : [
 		'@babel/polyfill',
-		path.join(__dirname, '/client/') + 'index.js'
+		path.join(__dirname , 'client/')  + 'index.js'
 	],
 	output : {
 		filename : 'client.bundle.js', // output filename
-		path : resolve(__dirname, 'build'), // output path
+		path : path.resolve(__dirname, 'build'), // output path
 		publicPath : '/'
 	},
 
