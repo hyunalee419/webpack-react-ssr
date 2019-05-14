@@ -3,8 +3,8 @@ const { resolve } = require('path');
 module.exports = {
 	context : resolve(__dirname, 'client'),
 	entry : [
-		'@babel/polyfill',
 		'raf/polyfill',
+		'@babel/polyfill',
 		'./index.js'
 	],
 	output : {
