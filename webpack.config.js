@@ -4,7 +4,7 @@ module.exports = {
 	context : resolve(__dirname, 'client'),
 	entry : [
 		'@babel/polyfill',
-		'./index.js'
+		path.join(__dirname, '/client/') + 'index.js'
 	],
 	output : {
 		filename : 'client.bundle.js', // output filename
