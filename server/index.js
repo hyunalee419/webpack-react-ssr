@@ -4,8 +4,8 @@ import express from 'express';
 // React
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import WDM from './WDM';
 import App from '../client/App';
+import WDM from './WDM';
 import Html from './Html';
 
 const app = express();
@@ -26,7 +26,7 @@ app.get('/', function (req, res, next) {
 
 	ReactDOMServer.renderToNodeStream(
 		<Html {...renderProps}>
-		<App data={preloadState}/>
+			<App data={preloadState}/>
 		</Html>
 	).pipe(res);
 });
